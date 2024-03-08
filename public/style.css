@@ -1,0 +1,268 @@
+body {
+    background-image: url("pexels-pixabay-302769.jpg");
+    
+  }
+  /* Styles for the lift row */
+.lift-row {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+/* Styles for each lift */
+.lift {
+    border: 2px solid #333;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    width: 100px;
+    background-color: white;
+    margin-right: 145px;
+}
+
+  /* Styles for the container */
+#requestedFloor {
+    margin-bottom: 10px;
+}
+
+/* Styles for the requested floor label */
+#requestedFloor span {
+    font-weight: bold;
+}
+#container {
+    display: flex;                  /* establish flex container */
+    flex-direction: row;            /* default value; can be omitted */
+    flex-wrap: nowrap;              /* default value; can be omitted */
+    justify-content: space-between; /* switched from default (flex-start, see below) */
+   
+    width: 100px;
+    height: 100px;
+  }
+ 
+
+.liftname{
+    position: relative;
+    text-align: center;
+    font-size: 24pt;
+    margin: 20px;
+    background-color: white;
+    width: 100px;
+    margin: px;
+}
+.liftname1{
+    
+}
+/* Styles for the lift time containers */
+#lift1Time,
+#lift2Time,
+#lift3Time {
+    margin-bottom: 5px;
+}
+
+/* Styles for the lift time labels */
+#lift1Time span,
+#lift2Time span,
+#lift3Time span {
+    font-weight: bold;
+    color: #333; /* Change the color to your preference */
+}
+
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+#liftTime {
+    font-size: 24px;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+
+.compartment {
+    position: absolute;
+    bottom: 0px;
+    background-color: white;
+    height: 50px;
+    font-size: 100pt;
+    color: #ffffff;
+    font-weight: 500;
+    overflow: hidden;    
+    width: 50%;
+    /* Blinking light */
+    box-shadow: inset 0px 0px 10px 5px #ff0000; /* Red shadow */
+    animation: blink 0s infinite alternate; /* Blinking animation */
+}
+
+/* Gate */
+.compartment:before,
+.compartment:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 10px;
+    height: 50px;
+    background-color: #333333;
+}
+
+.compartment:before {
+    left: -10px; /* Left gate */
+}
+
+.compartment:after {
+    right: -10px; /* Right gate */
+}
+
+/* Blinking animation */
+@keyframes blink {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+}
+
+
+#dynamicCompartment {
+    position: relative;
+    height: 429.6px;
+    margin: 25px 0 25px 0;
+    padding: 0;
+}
+
+.elevator {
+    position: relative;
+    margin: 0 8px;
+    width: 50px;
+    height: 950px;
+    top: 0px;
+    text-align: center;
+    font-size: 24pt;
+}
+.footer{
+    position: relative;
+    text-align: center;
+    font-size: 24pt;
+    margin: 20px;
+    background-color: white;
+}
+.header-1{
+  
+    position: relative;
+    text-align: center;
+    font-size: 24pt;
+    margin: 20px;
+    background-color: white;
+}
+
+
+.compartment > div {
+    position: relative;
+    top: -340px;
+}
+
+.compartment > div > div {
+    position: relative;
+    height: 85px;
+}
+
+/* #upDownButtons {
+    position: relative;
+    height: 366px;
+    padding: 0;
+    margin: 0;
+} */
+
+.floor-buttons {
+    height: 85px;
+}
+
+.span-floor {
+  margin-left: 50px;
+  color: white;
+}
+
+.button {
+    border:none;
+    border-radius: 0%;
+    height: 30px;
+    width: 30px;
+    background-color: wheat;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.button:hover {
+    background-color: #b1e2ff;
+}
+
+.button:hover .upSide{ border-bottom: 9px solid #26253d;}
+
+.button > .upSide {
+	height: 0; 
+	border-left: 8.5px solid transparent;
+	border-right: 8.5px solid transparent;	
+	border-bottom: 9px solid #ffffff;
+}
+
+.button > .downSide {
+	height: 0; 
+	border-left: 8.5px solid transparent;
+	border-right: 8.5px solid transparent;	
+	border-top: 9px solid white;
+}
+
+.button:hover .downSide{ border-top: 9px solid #26253d;}
+
+#floor-buttons-1 button.button.downSide {
+  display: none;
+}
+
+/* #floor-buttons-11 button.button.upSide {
+  display: none;
+} */
+
+.floor-number-container {
+    border: none;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    background-color: #26253d;
+    margin-right: 10px;
+}
+
+.floor-number-label {
+  color: rgb(255, 255, 255);
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.color-white {
+  color: white;
+}
+
+.maintenance-mode-container {
+  margin: 10px 0;
+}
+
+.maintenance-mode-item {
+  margin: 0 17px;
+}
+
+.font-weight-500 {
+  font-weight: 500;
+}

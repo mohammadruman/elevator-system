@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Kiit University</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+   
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    
+    <audio id="liftSound" src="jazz-bossa-nova-163669.mp3"></audio>
+    <div class="col-lg-9 mx-auto p-3 py-md-3">
+      <header class="d-flex align-items-center pb-2 mb-4 border-bottom">
+        <div class="footer">Kiit University elevator system</div>
+        
+      </header>
+      <div id="requestedFloor">Requested Floor: <span id="requestedFloorValue">10</span></div>
+    <div id="lift1Time">Lift 1 Travel Time: <span id="lift1TimeValue">0</span> seconds</div>
+    <div id="lift2Time">Lift 2 Travel Time: <span id="lift2TimeValue">0</span> seconds</div>
+    <div id="lift3Time">Lift 3 Travel Time: <span id="lift3TimeValue">0</span> seconds</div>
+
+
+      <main>
+        <div class="row g-5 d-flex justify-content-center">
+          <div class="col-9 elevators-body ">
+            <div id="elevators" class="row mt-4">
+              <div id="upDownButtons" class="col"></div>
+            </div>
+            <div class="lift-row">
+                <!-- Lift 1 -->
+                <div id="lift1" class="lift">Lift 1</div>
+                <!-- Lift 2 -->
+                <div id="lift2" class="lift">Lift 2</div>
+                <!-- Lift 3 -->
+                <div id="lift3" class="lift">Lift 3</div>
+            </div>
+            
+           
+        </div>
+      </main>
+    </div>
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- Jquery -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+  </body>
+</html>
